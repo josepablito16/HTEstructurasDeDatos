@@ -5,6 +5,11 @@
  */
 package ht6estructuras;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -14,8 +19,12 @@ import java.util.Scanner;
 public class HT6Estructuras {
 
     
-    public static void main(String[] args) 
+    public static void main(String[] args) throws FileNotFoundException, IOException 
     {
+        String linea;
+        File archivo = new File ("./cards_desc.txt");
+        FileReader fr = new FileReader (archivo);
+        BufferedReader br = new BufferedReader(fr);
         
         System.out.println("Ingrese la opcion dependiendo de la implementacion"+"\n"
                 + "que quiere hacer");
@@ -34,7 +43,25 @@ public class HT6Estructuras {
             System.out.print("\n  Ingrese la Opcion: ");
             String tipo=teclado.nextLine();
             
-        }
+            if (tipo.equals("4")) 
+            {
+                System.out.println("Saliendo...");
+                break;                
+            }
+            
+            if ((tipo.equals("1"))|| (tipo.equals("2"))||(tipo.equals("3")))
+            {
+                while( (linea=br.readLine())!=null)
+                {
+                    
+                    
+                }
+                
+            
+                
+            
+            
+            }
         
         
         
@@ -45,4 +72,5 @@ public class HT6Estructuras {
         
     }
     
+}
 }
