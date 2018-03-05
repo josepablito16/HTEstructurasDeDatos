@@ -27,12 +27,12 @@ public class Factory {
 	public static Map getMap(String opcion) {
 
 		if (opcion.equals("1")) {
-			return new HashMap();
+			return new HashMap<String, String>();
 
 		} else if (opcion.equals("2")) {
-			return new TreeMap();
+			return new TreeMap<String, String>();
 		} else if (opcion.equals("3")) {
-			return new LinkedHashMap();
+			return new LinkedHashMap<String, String>();
 		}
 		return null;
 
