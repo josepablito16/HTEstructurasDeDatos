@@ -24,7 +24,7 @@ public class Factory {
 	 *            opcion elegida por el usuario
 	 * @return instancia de lista a usar
 	 */
-	public static Map getMap(String opcion) {
+	public static Map<String, String> getMap(String opcion) {
 
 		if (opcion.equals("1")) {
 			return new HashMap<String, String>();

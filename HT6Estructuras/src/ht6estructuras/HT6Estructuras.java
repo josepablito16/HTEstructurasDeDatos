@@ -19,7 +19,9 @@ import java.util.Scanner;
 public class HT6Estructuras {
 
     
-    public static void main(String[] args) throws FileNotFoundException, IOException 
+    private static Scanner teclado;
+
+	public static void main(String[] args) throws FileNotFoundException, IOException 
     {
         String linea;
         File archivo = new File ("./cards_desc.txt");
@@ -31,7 +33,7 @@ public class HT6Estructuras {
         
         
         
-        Scanner teclado= new Scanner(System.in);
+        teclado = new Scanner(System.in);
         
         while (true)
         {
