@@ -3,13 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ht6estructuras;
+
 
 import java.util.*;
 
 /**
- *
- * @author jose
+ * Es el factory para las implementaciones de MAP. Utiliza las clases ya
+ * definidas por el Java Collection Framework y dependiendo de la implementación
+ * seleccionada, devuelve el map correspondiente.
+ * 
+ * @author Javier Anleu - 17149
+ * @author Jose Cifuentes - 17509
+ * @since March 5, 2018
+ * @version 1.0
  */
 public class Factory {
 
